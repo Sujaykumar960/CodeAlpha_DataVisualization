@@ -9,7 +9,6 @@ Excel_File_path = input("Enter Excel file path: ").strip('"').strip("'")
 try:
     df = pd.read_excel(Excel_File_path)
     print("\n Excel File loaded successfully!\n")
-    
 except Exception as e:
     print(f" Error loading file: {e}")
     exit()
