@@ -38,7 +38,7 @@ for col, val_list in filters.items():
     filtered_df = filtered_df[filtered_df[col].astype(str).str.lower().isin([v.lower() for v in val_list])]
 
 
-print("\n Chart options: bar, column, line, pie, area")   # Step 4: Choose Chart Type
+print("\n Chart options: bar, line, pie, area")   # Step 4: Choose Chart Type
 chart_type = input("Chart type: ").strip().lower()
 
 # Step 5: Select X and Y Axes ---
